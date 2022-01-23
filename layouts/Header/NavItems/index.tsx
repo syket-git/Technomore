@@ -36,7 +36,8 @@ const NavItems: FC = () => {
             </div>
           </div>
           <div className="space-y-3 mt-5">
-            <p className="cursor-pointer">Write story</p>
+            <p className="cursor-pointer">Write a story</p>
+            <p className="cursor-pointer">Your stories</p>
             <p className="cursor-pointer">Profile</p>
             <p className="cursor-pointer">Logout</p>
           </div>
