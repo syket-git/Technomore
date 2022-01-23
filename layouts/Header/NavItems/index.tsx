@@ -1,6 +1,7 @@
 import React, { FC, useState, useRef } from 'react';
 import styles from './NavItems.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 import useOnClickOutside from '../../../components/OnClickOutSide';
 
 const NavItems: FC = () => {
@@ -36,9 +37,22 @@ const NavItems: FC = () => {
             </div>
           </div>
           <div className="space-y-3 mt-5">
-            <p className="cursor-pointer">Write a story</p>
-            <p className="cursor-pointer">Your stories</p>
-            <p className="cursor-pointer">Profile</p>
+            <p className="cursor-pointer">
+              <Link href="/new-story">
+                <a>Write a story</a>
+              </Link>
+            </p>
+            <p className="cursor-pointer">
+              <Link href="/new-story">
+                <a>Your stories</a>
+              </Link>
+            </p>
+            <p className="cursor-pointer">
+              <Link href="/new-story">
+                <a>Profile</a>
+              </Link>
+            </p>
+
             <p className="cursor-pointer">Logout</p>
           </div>
         </div>

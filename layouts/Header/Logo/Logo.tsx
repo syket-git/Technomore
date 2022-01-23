@@ -1,11 +1,14 @@
 import React, { FC } from 'react';
+import Link from 'next/link';
 
 const Logo: FC = () => {
   return (
     <div>
-      <h1 className="text-4xl text-secondary-light font-bold cursor-pointer">
-        Technomore
-      </h1>
+      <Link passHref href="/dashboard">
+        <h1 className="text-4xl text-secondary-light font-bold cursor-pointer">
+          Technomore
+        </h1>
+      </Link>
     </div>
   );
 };
