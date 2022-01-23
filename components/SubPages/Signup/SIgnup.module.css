@@ -1,0 +1,4 @@
+.signup__wrapper {
+  @apply w-[600px] h-auto rounded-lg mx-auto mt-16 bg-primary p-5;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}

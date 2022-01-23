@@ -1,9 +1,11 @@
+import type { NextPage } from 'next';
 import React, { FC } from 'react';
+import SubSignupPages from '../../components/SubPages/Signup';
 
-const Signup: FC = () => {
+const Signup: NextPage = () => {
   return (
     <div>
-      <h1>Signup page</h1>
+      <SubSignupPages />
     </div>
   );
 };
