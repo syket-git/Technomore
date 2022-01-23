@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import Input from '../../Forms/Input/Input';
-import styles from './Signup.module.css';
+import styles from './Login.module.css';
 import Link from 'next/link';
 import { BsXCircleFill } from 'react-icons/bs';
 
-const SubSignupPages: FC = () => {
+const SubLoginPages: FC = () => {
   return (
     <div className={styles.signup__wrapper}>
       <div className="md:block hidden absolute top-5 right-5">
@@ -13,22 +13,19 @@ const SubSignupPages: FC = () => {
         </Link>
       </div>
       <h1 className="text-4xl mt-5 text-secondary font-bold text-center">
-        Signup
+        Login
       </h1>
       <div className="mt-8 mb-16 text-center">
         <form className="space-y-5">
-          <Input placeholder={'Full Name'} type={'text'} />
           <Input placeholder={'Username'} type={'text'} />
-          <Input placeholder={'Email'} type={'email'} />
           <Input placeholder={'Password'} type={'password'} />
-          <Input type={'file'} />
           <Input value={'Submit'} type={'submit'} />
         </form>
         <p className="py-2">
-          Already have an account?{' '}
-          <Link passHref href="/login">
+          No Account?{' '}
+          <Link passHref href="/signup">
             <span className="font-medium underline cursor-pointer">
-              Sign in
+              Create one
             </span>
           </Link>
         </p>
@@ -37,4 +34,4 @@ const SubSignupPages: FC = () => {
   );
 };
 
-export default SubSignupPages;
+export default SubLoginPages;
