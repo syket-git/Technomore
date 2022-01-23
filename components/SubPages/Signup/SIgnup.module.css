@@ -1,4 +1,10 @@
 .signup__wrapper {
-  @apply w-[600px] h-auto rounded-lg mx-auto mt-16 bg-primary p-5;
+  @apply w-full h-full md:w-[600px] md:h-auto rounded-lg mx-auto mt-16 bg-primary p-5;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+@media all and (max-width: 768px) {
+  .signup__wrapper {
+    box-shadow: none !important;
+  }
 }
