@@ -6,7 +6,7 @@ import NavItems from './NavItems';
 const Header: FC = () => {
   return (
     <div className={styles.header}>
-      <div className="container flex items-center justify-between">
+      <div className="container relative flex items-center justify-between">
         <Logo />
         <NavItems />
       </div>

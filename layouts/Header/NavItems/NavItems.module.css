@@ -1,0 +1,9 @@
+.navItems__dropdown {
+  @apply py-6 px-5 rounded absolute bg-primary text-secondary;
+  width: 300px;
+  height: auto;
+  top: 66px;
+  right: 0px;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
