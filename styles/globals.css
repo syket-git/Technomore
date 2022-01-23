@@ -11,3 +11,9 @@
 body {
   @apply bg-primary text-secondary;
 }
+.ql-editor.ql-blank::before {
+  color: white !important;
+}
+.ql-toolbar.ql-snow {
+  background-color: white !important;
+}
