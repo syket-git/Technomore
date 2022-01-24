@@ -12,14 +12,34 @@ const SubNewStory: FC = () => {
 
   return (
     <div className="container">
-      <h1>New Story</h1>
-      <ReactQuill
-        modules={modules}
-        formats={formats}
-        value={details}
-        onChange={(e) => handleBodyChange(e)}
-        placeholder="Write something amazing..."
-      />
+      <div className="my-16">
+        <div className="mb-10">
+          <input
+            placeholder="Title"
+            type="text"
+            className="w-full focus:outline-none italic bg-transparent py-3 text-4xl font-semibold text-secondary border-b-2 border-secondary"
+          />
+        </div>
+
+        <div>
+          <p className="text-gray-400 mb-4 text-lg font-semibold">
+            Description
+          </p>
+          <ReactQuill
+            className="h-96"
+            modules={modules}
+            formats={formats}
+            value={details}
+            onChange={(e) => handleBodyChange(e)}
+            placeholder="Write something amazing..."
+          />
+        </div>
+        <div className="mt-20">
+          <button className="w-full py-2 border-2 border-secondary hover:bg-secondary hover:text-primary transition-all duration-150 rounded font-semibold">
+            Publish
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
