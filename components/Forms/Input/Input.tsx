@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
 
-const Input: FC<{ value?: string; placeholder?: string; type: string }> = ({
-  placeholder,
-  type,
-  value,
-}) => {
+const Input: FC<{
+  value?: string;
+  placeholder?: string;
+  type: string;
+  readOnly?: boolean;
+}> = ({ placeholder, type, value, readOnly }) => {
   return (
     <input
       className={` ${
@@ -15,6 +16,7 @@ const Input: FC<{ value?: string; placeholder?: string; type: string }> = ({
       placeholder={placeholder}
       type={type}
       value={value}
+      readOnly={readOnly}
     />
   );
 };
