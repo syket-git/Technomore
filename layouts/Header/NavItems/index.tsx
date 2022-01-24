@@ -31,10 +31,12 @@ const NavItems: FC = () => {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFXln_wu3DHmzzi11z3Lweq69IkczU1pXbZA&usqp=CAU"
               alt="Syket Bhattachergee"
             />
-            <div className="ml-3">
-              <p>Syket Bhattachergee</p>
-              <p>@syketb</p>
-            </div>
+            <Link passHref href="/profile">
+              <div className="ml-3">
+                <p>Syket Bhattachergee</p>
+                <p>@syketb</p>
+              </div>
+            </Link>
           </div>
           <div className="space-y-3 mt-5">
             <p className="cursor-pointer">
@@ -43,12 +45,12 @@ const NavItems: FC = () => {
               </Link>
             </p>
             <p className="cursor-pointer">
-              <Link href="/new-story">
+              <Link href="/your-stories">
                 <a>Your stories</a>
               </Link>
             </p>
             <p className="cursor-pointer">
-              <Link href="/new-story">
+              <Link href="/profile">
                 <a>Profile</a>
               </Link>
             </p>
